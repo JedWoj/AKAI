@@ -18,19 +18,33 @@
                 <input class="form__input"  type="text" placeholder="Nazwisko" />
                 <input class="form__input"  type="text" placeholder="e-mail" />
             </div>
-            <p>
+            <p class="form__text">
                 Sekcje, które Cię interesują:
             </p>
-            <input type="checkbox" id="frontend-checkbox" name="section" value="frontend">
-            <label for="frontend-checkbox">Frontend</label>
-            <input type="checkbox" id="backend-checkbox" name="section" value="backend">
-            <label for="backend-checkbox">Backend</label>
-            <input type="checkbox" id="mobile-checkbox" name="section" value="mobile">
-            <label for="mobile-checkbox">Mobile</label>
-            <input type="checkbox" id="graphics-checkbox" name="section" value="graphics">
-            <label for="graphics-checkbox">Grafika</label>
-            <input type="submit" />
-        </form>
-    </main>
-</body>
-</html>
+            <div class="form__checkbox-flex">
+                <div>
+                    <div class="form__checkbox-wrap">
+                        <input type="checkbox" class="form__checkbox" id="frontend-checkbox" name="section" value="frontend">
+                        <label for="frontend-checkbox">Frontend</label>
+                    </div>
+                    <div class="form__checkbox-wrap">
+                        <input type="checkbox" class="form__checkbox" id="backend-checkbox" name="section" value="backend">
+                        <label for="backend-checkbox">Backend</label>
+                    </div>
+                </div>
+                <div>
+                    <div class="form__checkbox-wrap">
+                        <input type="checkbox" class="form__checkbox" id="mobile-checkbox" name="section" value="mobile">
+                        <label for="mobile-checkbox">Mobile</label>
+                    </div>
+                    <div class="form__checkbox-wrap">
+                        <input type="checkbox" class="form__checkbox" id="graphics-checkbox" name="section" value="graphics">
+                        <label for="graphics-checkbox">Grafika</label>
+                    </div>
+                </div>
+            </div>
+                <input type="submit" class="form__btn" />
+            </form>
+        </main>
+    </body>
+    </html>
