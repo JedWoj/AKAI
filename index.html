@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="sass/main.css">
+    <title>AKAI Frontend Task</title>
+</head>
+<body>
+    <main class="background">
+        <form class="form">
+            <h1 class="form__heading">
+                Formularz rekrutacyjny
+            </h1>
+            <div class="form__input-wrap">
+                <input class="form__input" type="text" placeholder="Imię" />
+                <input class="form__input"  type="text" placeholder="Nazwisko" />
+                <input class="form__input"  type="text" placeholder="e-mail" />
+            </div>
+            <p>
+                Sekcje, które Cię interesują:
+            </p>
+            <input type="checkbox" id="frontend-checkbox" name="section" value="frontend">
+            <label for="frontend-checkbox">Frontend</label>
+            <input type="checkbox" id="backend-checkbox" name="section" value="backend">
+            <label for="backend-checkbox">Backend</label>
+            <input type="checkbox" id="mobile-checkbox" name="section" value="mobile">
+            <label for="mobile-checkbox">Mobile</label>
+            <input type="checkbox" id="graphics-checkbox" name="section" value="graphics">
+            <label for="graphics-checkbox">Grafika</label>
+            <input type="submit" />
+        </form>
+    </main>
+</body>
+</html>
