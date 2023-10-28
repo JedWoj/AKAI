@@ -17,24 +17,42 @@ html {
   width: 100vw;
 }
 
-.form {
+.registration {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: rgb(133, 138, 167);
-  padding: 4rem 6rem;
-  color: #1e4880;
+  transition: all 2s;
+  background-color: rgba(187, 190, 205, 0.9);
+  padding: 2rem 4rem;
+  color: #1a3f70;
   border-radius: 5rem;
   box-shadow: 8px 8px 24px 0px rgb(66, 68, 90);
-  min-width: 44rem;
+  width: 100%;
+  max-width: 50rem;
+  min-width: 30rem;
+  font-family: Arial, Helvetica, sans-serif;
 }
-.form__heading {
-  font-size: 2rem;
+.registration--success {
+  box-shadow: 0px 0px 50px 20px rgb(25, 221, 90);
+}
+.registration--error {
+  box-shadow: 0px 0px 50px 20px rgb(211, 113, 106);
+}
+.registration__img-wrap {
+  width: 10rem;
+  aspect-ratio: 1;
+  margin: 0 auto;
+}
+.registration__img {
+  width: 100%;
+}
+.registration__heading {
+  font-size: 3rem;
   text-align: center;
   margin-bottom: 4rem;
 }
-.form__input-wrap {
+.registration__input-wrap {
   display: flex;
   flex-direction: column;
   gap: 2rem;
@@ -42,50 +60,61 @@ html {
   margin-left: auto;
   margin-right: auto;
 }
-.form__input {
+.registration__input {
   padding: 1rem 2rem;
   border-radius: 5rem;
   outline: none;
   border: none;
   font-size: 1.8rem;
-  color: #1e4880;
+  color: #1a3f70;
 }
-.form__input::-moz-placeholder {
+.registration__input::-moz-placeholder {
   color: rgb(53, 53, 187);
 }
-.form__input:-ms-input-placeholder {
+.registration__input::placeholder {
   color: rgb(53, 53, 187);
 }
-.form__input::placeholder {
-  color: rgb(53, 53, 187);
-}
-.form__text {
-  font-size: 1.5rem;
+.registration__text {
+  font-size: 2rem;
   font-weight: bold;
   text-align: center;
-  margin-bottom: 1rem;
+  margin: 1rem 0;
 }
-.form__checkbox-wrap {
+.registration__checkbox-wrap {
   display: flex;
   gap: 0.4rem;
   margin-top: 0.4rem;
   font-size: 1.4rem;
+  font-size: 1.8rem;
 }
-.form__checkbox-flex {
+.registration__checkbox-flex {
   display: flex;
   gap: 2rem;
   align-items: center;
   justify-content: center;
 }
-.form__btn {
+.registration__btn {
   margin-left: auto;
   margin-right: auto;
-  display: block;
   margin-top: 2rem;
-  background-color: #1e4880;
+  display: block;
+  background-color: #1a3f70;
   outline: none;
   border: none;
+  font-size: 2rem;
   padding: 1rem 2rem;
   color: #fff;
   border-radius: 5rem;
+  cursor: pointer;
+  box-shadow: 8px 8px 24px 0px rgb(66, 68, 90);
+}
+.registration__error {
+  text-align: center;
+  color: #ff5555;
+  font-size: 2rem;
+  transform: translateY(40%);
+}
+
+.hidden {
+  visibility: hidden;
 }/*# sourceMappingURL=main.css.map */

@@ -1,50 +1,96 @@
 <!DOCTYPE html>
 <html lang="pl">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="sass/main.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="sass/main.css" />
+    <script defer type="module" src="js/validation.js"></script>
     <title>AKAI Frontend Task</title>
-</head>
-<body>
+  </head>
+  <body>
     <main class="background">
-        <form class="form">
-            <h1 class="form__heading">
-                Formularz rekrutacyjny
-            </h1>
-            <div class="form__input-wrap">
-                <input class="form__input" type="text" placeholder="Imię" />
-                <input class="form__input"  type="text" placeholder="Nazwisko" />
-                <input class="form__input"  type="text" placeholder="e-mail" />
+      <section class="registration">
+        <figure class="registration__img-wrap">
+          <img
+            src="img/akai-logo.png"
+            alt="AKAI logo"
+            class="registration__img"
+          />
+        </figure>
+        <h1 class="registration__heading">Formularz rekrutacyjny</h1>
+        <form>
+          <div class="registration__input-wrap">
+            <input
+              class="registration__input"
+              type="text"
+              placeholder="Imię"
+              data-name="firstName"
+            />
+            <input
+              class="registration__input"
+              type="text"
+              placeholder="Nazwisko"
+              data-name="secondName"
+            />
+            <input
+              class="registration__input"
+              type="text"
+              placeholder="e-mail"
+              data-name="email"
+            />
+          </div>
+          <p class="registration__text">Sekcje, które Cię interesują:</p>
+          <div class="registration__checkbox-flex">
+            <div>
+              <div class="registration__checkbox-wrap">
+                <input
+                  type="checkbox"
+                  class="registration__checkbox"
+                  id="frontend-checkbox"
+                  name="section"
+                  value="frontend"
+                />
+                <label for="frontend-checkbox">Frontend</label>
+              </div>
+              <div class="registration__checkbox-wrap">
+                <input
+                  type="checkbox"
+                  class="registration__checkbox"
+                  id="backend-checkbox"
+                  name="section"
+                  value="backend"
+                />
+                <label for="backend-checkbox">Backend</label>
+              </div>
             </div>
-            <p class="form__text">
-                Sekcje, które Cię interesują:
-            </p>
-            <div class="form__checkbox-flex">
-                <div>
-                    <div class="form__checkbox-wrap">
-                        <input type="checkbox" class="form__checkbox" id="frontend-checkbox" name="section" value="frontend">
-                        <label for="frontend-checkbox">Frontend</label>
-                    </div>
-                    <div class="form__checkbox-wrap">
-                        <input type="checkbox" class="form__checkbox" id="backend-checkbox" name="section" value="backend">
-                        <label for="backend-checkbox">Backend</label>
-                    </div>
-                </div>
-                <div>
-                    <div class="form__checkbox-wrap">
-                        <input type="checkbox" class="form__checkbox" id="mobile-checkbox" name="section" value="mobile">
-                        <label for="mobile-checkbox">Mobile</label>
-                    </div>
-                    <div class="form__checkbox-wrap">
-                        <input type="checkbox" class="form__checkbox" id="graphics-checkbox" name="section" value="graphics">
-                        <label for="graphics-checkbox">Grafika</label>
-                    </div>
-                </div>
+            <div>
+              <div class="registration__checkbox-wrap">
+                <input
+                  type="checkbox"
+                  class="registration__checkbox"
+                  id="mobile-checkbox"
+                  name="section"
+                  value="mobile"
+                />
+                <label for="mobile-checkbox">Mobile</label>
+              </div>
+              <div class="registration__checkbox-wrap">
+                <input
+                  type="checkbox"
+                  class="registration__checkbox"
+                  id="graphics-checkbox"
+                  name="section"
+                  value="graphics"
+                />
+                <label for="graphics-checkbox">Grafika</label>
+              </div>
             </div>
-                <input type="submit" class="form__btn" />
-            </form>
-        </main>
-    </body>
-    </html>
+          </div>
+          <button type="submit" class="registration__btn">Wyslij</button>
+        </form>
+        <h2 class="hidden registration__error">Błędne dane formularza!</h2>
+      </section>
+    </main>
+  </body>
+</html>

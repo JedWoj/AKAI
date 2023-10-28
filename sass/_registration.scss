@@ -1,0 +1,111 @@
+.registration {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 2s;
+  background-color: rgba(187, 190, 205, 0.9);
+  padding: 2rem 4rem;
+  color: $color-primary;
+  border-radius: 5rem;
+  box-shadow: 8px 8px 24px 0px rgba(66, 68, 90);
+  width: 100%;
+  max-width: 50rem;
+  min-width: 30rem;
+  font-family: Arial, Helvetica, sans-serif;
+
+  &--success {
+    box-shadow: 0px 0px 50px 20px rgb(25, 221, 90);
+  }
+
+  &--error {
+    box-shadow: 0px 0px 50px 20px rgb(211, 113, 106);
+  }
+
+  &__img-wrap {
+    width: 10rem;
+    aspect-ratio: 1;
+    margin: 0 auto;
+  }
+
+  &__img {
+    width: 100%;
+  }
+
+  &__heading {
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 4rem;
+  }
+
+  &__input-wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin: 2rem 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  &__input {
+    padding: 1rem 2rem;
+    border-radius: 5rem;
+    outline: none;
+    border: none;
+    font-size: 1.8rem;
+    color: $color-primary;
+
+    &::placeholder {
+      color: rgb(53, 53, 187);
+    }
+  }
+
+  &__text {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    margin: 1rem 0;
+  }
+
+  &__checkbox-wrap {
+    display: flex;
+    gap: 0.4rem;
+    margin-top: 0.4rem;
+    font-size: 1.4rem;
+    font-size: 1.8rem;
+  }
+
+  &__checkbox-flex {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__btn {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2rem;
+    display: block;
+    background-color: $color-primary;
+    outline: none;
+    border: none;
+    font-size: 2rem;
+    padding: 1rem 2rem;
+    color: #fff;
+    border-radius: 5rem;
+    cursor: pointer;
+    box-shadow: 8px 8px 24px 0px rgba(66, 68, 90);
+  }
+
+  &__error {
+    text-align: center;
+    color: #ff5555;
+    font-size: 2rem;
+    transform: translateY(40%);
+  }
+}
+
+.hidden {
+  visibility: hidden;
+}
